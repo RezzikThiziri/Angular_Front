@@ -1,0 +1,18 @@
+// Importe des styles de carte génériques si nécessaire
+@import '../../../styles/card.scss';
+
+// Styles spécifiques au composant Student
+.student {
+  width: 100%;
+  background-color: blue; // Couleur de fond pour le composant student
+}
+
+.student:hover {
+  cursor: pointer;
+}
+
+button {
+  font-size: 1em;
+  margin-left: 80px;
+ 
+}

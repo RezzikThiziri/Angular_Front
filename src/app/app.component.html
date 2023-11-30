@@ -1,5 +1,19 @@
 <app-header></app-header>
 <div class="content">
-  <app-ticket-form></app-ticket-form>
-  <app-ticket-list></app-ticket-list>
+  <div class="forms-container">
+    <a routerLink="/add-ticket">Ajouter un ticket</a>
+    <br>
+    <a routerLink="/tickets">afficher la liste des tickets</a>
+    <br>
+    <a routerLink="/add-student">Ajouter un étudiant</a>
+    <br>
+    <a routerLink="/students">afficher la liste des étudiants</a>
+    <router-outlet></router-outlet>
+  </div>
+  <div class="lists-container">
+   <!-- <app-ticket-list></app-ticket-list>-->
+    <!--<app-student-list></app-student-list>-->
+  </div>
 </div>
+
+

@@ -26,5 +26,28 @@ export class TicketService {
   addTicket(ticket: Ticket) {
     // You need here to update the list of ticket and then update our observable (Subject) with the new list
     // More info: https://angular.io/tutorial/toh-pt6#the-searchterms-rxjs-subject
+    this.ticketList.push(ticket);
+    this.tickets$.next(this.ticketList);
   }
+   // l'ajout de la fonction de suppression 
+  
+   deleteTicket(ticket: Ticket){
+    const index = this.ticketList.indexOf(ticket);//rechercher l'index du ticket dans le tableau 
+    if (index !== -1) {
+      this.ticketList.splice(index, 1); // Supprimer le ticket de la liste
+     
+    }
+    this.tickets$.next(this.ticketList); // Mettre à jour l'observable
+    
+   }
+//modification de la fonction de suppression pour archiver les tickets au lieu de les supprimer 
+   archiveTicket(ticket: Ticket) {
+    const index = this.ticketList.indexOf(ticket);
+    if (index !== -1) {
+      this.ticketList[index].archived = true; // Marquer le ticket comme archivé
+     
+    }
+    this.tickets$.next(this.ticketList);
+  }
+  
 }

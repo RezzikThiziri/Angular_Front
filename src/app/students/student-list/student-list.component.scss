@@ -1,0 +1,27 @@
+
+// Appliquez des styles directement au composant StudentList
+app-student-list {
+    margin: 0.2em;
+  }
+  
+  // Styles pour la liste d'étudiants
+  .student-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  // Styles pour les boutons
+  button {
+    background-color: transparent;
+    font-size: 1em;
+    margin-left: 460px;
+  }
+  
+  // Ajoutez des styles spécifiques aux cartes d'étudiants si nécessaire
+  .student {
+    width: 40%;
+    // Ajoutez d'autres styles au besoin
+  }
+  

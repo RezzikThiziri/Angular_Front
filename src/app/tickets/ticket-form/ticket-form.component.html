@@ -9,9 +9,29 @@
     Description <br>
     <input class="input-custom" type="text" id="description" [formControlName]="'description'">
   </label>
+  <!--ajout de nouvel input pour le nom de filliére -->
+  <br>
+  <label for="Major">
+    Filliére <br>
+    <select class="input-custom" type="text" id="major" [formControlName]="'major'">
+    <option *ngFor="let major of majors" [value]="major">{{ major }}</option>
+  </select>
+  </label>
+  
+  <br>
+  
+  <label for="id">
+    Étudiant <br>
+    <select class="input-custom" id="id" [formControlName]="'id'">
+      <option *ngFor="let student of students" [value]="student.id">{{student.id}} - {{student.FirstName}} {{student.LastName}}</option>
+    </select>
+  </label>
+
   <br>
   <button type="submit" class="btn-custom" (click)="addTicket()">Create</button>
+  
+  
 </form>
 
 <!-- Uncomment below to see your form structure and how it changes-->
-<!--<br><br>{{ticketForm.getRawValue() | json}}-->
+<br><br>{{ticketForm.getRawValue() | json}}

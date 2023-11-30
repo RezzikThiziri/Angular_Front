@@ -1,0 +1,25 @@
+// Importe des styles de carte génériques
+@import '../../../styles/card.scss';
+
+// Styles spécifiques au composant StudentForm
+
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  margin-right: 25px;
+  // Ajoutez d'autres styles au besoin
+}

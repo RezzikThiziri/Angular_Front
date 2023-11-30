@@ -2,8 +2,17 @@
 
 .ticket {
   width: 100%;
+  background: red;
 }
 
 .ticket:hover {
   cursor: pointer;
+}
+
+button { 
+  
+  
+  font-size: 1em;
+  margin-left: 80px;
+
 }

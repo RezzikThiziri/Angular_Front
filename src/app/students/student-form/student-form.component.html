@@ -1,0 +1,24 @@
+<h3>Create a new student</h3>
+<form class="student-form" [formGroup]="studentForm">
+ <!--<label for="studentId">
+    Id <br>
+    <input class="input-custom" type="text" id="studentId" [formControlName]="'studentId'">
+  </label>
+  <br>-->
+  <label for="FirstName">
+    Nom <br>
+    <input class="input-custom" type="text" id="FirstName" [formControlName]="'FirstName'">
+  </label>
+
+  <br>
+
+  <label for="LastName">
+    Prénom <br>
+    <input class="input-custom" type="text" id="LastName" [formControlName]="'LastName'">
+  </label>
+    <br>
+  <button type="submit" class="btn-custom" (click)="addStudent()">Create</button>
+</form>
+
+<!-- Uncomment below to see your form structure and how it changes-->
+ <br><br>{{studentForm.getRawValue() | json}} 

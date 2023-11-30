@@ -1,0 +1,14 @@
+
+<div class="student-list">
+  <div class="student" *ngFor="let student of studentList">
+    <br>
+      <!--Inputs & Output allow communication between parent & child components.-->
+      <!--More information: https://angular.io/guide/component-interaction-->
+      <!--<app-ticket [ticket]="ticket" (ticketHasBeenSelected)="ticketHasBeenSelected($event)" (ticketDeleted)="archiveTicket($event)"></app-ticket>--> 
+      <app-student [student]="student" (studentDeleted)="deleteStudent($event)"></app-student>
+      
+      
+
+  </div>
+</div>
+
