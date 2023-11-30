@@ -1,3 +1,6 @@
+##  Note:
+Pour accéder au back-end vous le trouverez dans une branche différent qui s'appelle Back-end  
+
 # Starter Waiting List
 
 ## Installation et exécution
